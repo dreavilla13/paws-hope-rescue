@@ -33,8 +33,12 @@ nav ul {
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
+  color: #2f6f4f;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e67e22;
 }
 
 main {
@@ -54,8 +58,8 @@ button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1rem;
-  border: none;
-  background-color: #2f6f4f;
+  border-radius: 4px;
+  background-color: #e67e22; /* orange accent */
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -123,6 +127,16 @@ th, td {
   color: #2f6f4f;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 50px;
 }
 
 /* Mobile */
