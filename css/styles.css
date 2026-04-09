@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,26 +7,27 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  background-color: #f4f8f6;
   color: #222;
 }
 
 header {
   background-color: #ffffff;
-  padding: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 3px solid #e67e22;
 }
 
 .logo-banner {
   display: block;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
+  background-color: #eaf5f1;
 }
 
 .logo-banner img {
-  width: 100%;
-  max-height: 120px; /* controls how tall it gets */
-  object-fit: contain;
+  width: auto;
+  max-width: 500px;
+  max-height: 90px;
+  height: auto;
 }
 
 header h1 {
@@ -37,19 +37,22 @@ header h1 {
 }
 
 #main-nav {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 nav a {
   color: #2f6f4f;
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -60,8 +63,25 @@ main {
   padding: 2rem;
 }
 
+section,
+form,
+table,
+.grid-layout,
+#extra-content {
+  margin-bottom: 2rem;
+}
+
+.hero,
+.page-intro {
+  background-color: #fff8f1;
+  border-left: 6px solid #e67e22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
 footer {
-  background-color: #222;
+  background-color: #2f6f4f;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -74,44 +94,75 @@ button {
   margin-top: 1rem;
   padding: 0.75rem 1rem;
   border-radius: 4px;
-  background-color: #e67e22; /* orange accent */
+  border: none;
+  background-color: #e67e22;
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
+.button:hover,
+button:hover {
+  background-color: #cc6d1c;
+}
+
 form {
   max-width: 700px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-top: 4px solid #2f6f4f;
 }
 
 fieldset {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cfd8d3;
+  border-radius: 6px;
+  background-color: #f9fcfb;
+}
+
+legend {
+  color: #2f6f4f;
+  font-weight: 600;
+  padding: 0 0.5rem;
 }
 
 label {
   display: block;
   margin-top: 0.75rem;
+  font-weight: 500;
 }
 
 input {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.25rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-table, th, td {
-  border: 1px solid #ccc;
+table,
+th,
+td {
+  border: 1px solid #d8d8d8;
 }
 
-th, td {
+th {
+  background-color: #2f6f4f;
+  color: white;
+}
+
+th,
+td {
   padding: 0.75rem;
   text-align: left;
 }
@@ -123,16 +174,19 @@ th, td {
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   border: 1px solid #ddd;
+  border-top: 4px solid #e67e22;
+  border-radius: 8px;
 }
 
 #extra-content {
   margin-top: 1rem;
   padding: 1rem;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #fff8f1;
+  border-left: 4px solid #e67e22;
+  border-radius: 8px;
 }
 
 .hamburger {
@@ -142,6 +196,8 @@ th, td {
   color: #2f6f4f;
   padding: 0.5rem 1rem;
   margin: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .logo-area {
@@ -156,23 +212,22 @@ th, td {
 
 @media (max-width: 768px) {
   .logo-banner img {
-    max-height: 80px;
+    max-width: 280px;
+    max-height: 65px;
   }
 
   .hamburger {
     display: block;
   }
 
-  /* THIS is the key fix */
   #main-nav ul {
-    display: none;              /* hide menu by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #2f6f4f;
     padding: 1rem 0;
   }
 
-  /* show menu when JS toggles it */
   #main-nav ul.show {
     display: flex;
   }
@@ -181,8 +236,15 @@ th, td {
     margin: 0.5rem 1rem;
   }
 
-  /* optional but cleaner */
+  #main-nav a {
+    color: white;
+  }
+
   nav ul {
     flex-wrap: nowrap;
+  }
+
+  main {
+    padding: 1rem;
   }
 }
