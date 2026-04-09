@@ -14,9 +14,20 @@ body {
 
 header {
   background-color: #ffffff;
-  color: #222;
-  padding: 1rem 2rem;
+  padding: 0;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.logo-banner {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.logo-banner img {
+  width: 100%;
+  max-height: 120px; /* controls how tall it gets */
+  object-fit: contain;
 }
 
 header h1 {
