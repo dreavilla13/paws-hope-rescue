@@ -6,16 +6,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
   color: #222;
 }
 
 header {
-  background-color: #2f6f4f;
-  color: white;
-  padding: 1rem;
+  background-color: #ffffff;
+  color: #222;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 header h1 {
