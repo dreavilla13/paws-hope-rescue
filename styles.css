@@ -124,21 +124,31 @@ th, td {
 
 /* Mobile */
 @media (max-width: 768px) {
+
   .hamburger {
     display: block;
   }
 
+  /* 🔥 THIS is the key fix */
   #main-nav ul {
-    display: none;
+    display: none;              /* hide menu by default */
     flex-direction: column;
-    margin-top: 1rem;
+    width: 100%;
+    background-color: #2f6f4f;
+    padding: 1rem 0;
   }
 
+  /* show menu when JS toggles it */
   #main-nav ul.show {
     display: flex;
   }
 
-  .desktop-nav {
-    flex-direction: column;
+  #main-nav li {
+    margin: 0.5rem 1rem;
+  }
+
+  /* optional but cleaner */
+  nav ul {
+    flex-wrap: nowrap;
   }
 }
