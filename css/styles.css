@@ -36,6 +36,10 @@ header h1 {
   margin-bottom: 0.25rem;
 }
 
+#main-nav {
+  padding: 0.5rem 1rem;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -137,7 +141,7 @@ th, td {
   background: white;
   color: #2f6f4f;
   padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .logo-area {
@@ -150,8 +154,10 @@ th, td {
   width: 50px;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
+  .logo-banner img {
+    max-height: 80px;
+  }
 
   .hamburger {
     display: block;
