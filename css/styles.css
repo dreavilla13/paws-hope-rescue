@@ -19,14 +19,14 @@ header {
 .logo-banner {
   display: block;
   text-align: center;
-  padding: 0.75rem 0;
-  background-color: #eaf5f1;
+  padding: 1rem 0;
+  background-color: #dfe9e6;
 }
 
 .logo-banner img {
   width: auto;
-  max-width: 500px;
-  max-height: 90px;
+  max-width: 800px;
+  max-height: 140px;
   height: auto;
 }
 
@@ -81,7 +81,7 @@ table,
 }
 
 footer {
-  background-color: #2f6f4f;
+  background-color: #147a7e;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -212,8 +212,8 @@ td {
 
 @media (max-width: 768px) {
   .logo-banner img {
-    max-width: 280px;
-    max-height: 65px;
+    max-width: 320px;
+    max-height: 80px;
   }
 
   .hamburger {
