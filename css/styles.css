@@ -92,18 +92,26 @@ footer {
 button {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
   border: none;
   background-color: #e67e22;
   color: white;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 0 4px 0 var(--accent-hover);
+  font-weight: 600;
 }
 
 .button:hover,
 button:hover {
   background-color: #cc6d1c;
+}
+
+.button:active,
+button:active{
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--accent-hover);
 }
 
 form {
@@ -175,11 +183,12 @@ td {
 
 .card {
   background: #ffffff;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #ddd;
   border-top: 4px solid #e67e22;
   border-radius: 8px;
 }
+
 
 #extra-content {
   margin-top: 1rem;
