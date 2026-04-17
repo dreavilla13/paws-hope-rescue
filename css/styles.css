@@ -17,16 +17,17 @@ header {
 }
 
 .logo-banner {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 0;
   background-color: #dfe9e6;
 }
 
 .logo-banner img {
-  width: auto;
-  max-width: 800px;
-  max-height: 140px;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 150px;
   height: auto;
 }
 
