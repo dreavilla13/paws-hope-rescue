@@ -7,14 +7,14 @@ function toggleMenu() {
   }
 }
 function toggleContent() {
-  var content = document.getElementById("extra-content");
-  var btn = event.target;
+  const content = document.getElementById("extra-content");
+  const button = document.getElementById("toggle-btn");
 
   if (content.style.display === "none" || content.style.display === "") {
     content.style.display = "block";
-    btn.textContent = "Show Less";
+    button.textContent = "Hide More Info";
   } else {
     content.style.display = "none";
-    btn.textContent = "Show More Info";
+    button.textContent = "Show More Info";
   }
 }
