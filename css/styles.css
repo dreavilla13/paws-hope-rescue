@@ -209,6 +209,7 @@ td {
 
 
 #extra-content {
+  display: none;
   margin-top: 1rem;
   padding: 1rem;
   background: #fff8f1;
