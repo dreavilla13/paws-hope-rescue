@@ -54,6 +54,13 @@ header {
   margin-top: 2rem;
 }
 
+video {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
 .tiktok-embed {
   max-width: 400px !important;
   width: 100% !important;
